@@ -1,0 +1,57 @@
+.side,
+.container {
+  width: 10em;
+  height: 10em;
+  }
+
+.container {
+  transform-style: preserve-3d;
+  animation: rotate 5s infinite linear;
+  }
+
+.side {
+  position: absolute;
+  width: 10em;
+  height: 10em;
+  border: 2px solid white;
+  //opacity: .7
+  }
+
+.back {
+  transform: translateZ(-5em);
+  background: orange;
+  }
+
+.left {
+  transform: translateX(-5em) rotateY(90deg);
+  background: lightgreen;
+  }
+
+.right {
+  transform: translateX(5em) rotateY(90deg);
+  background: yellowgreen;
+  }
+
+.top {
+  transform: translateY(-5em) rotateX(90deg);
+  background: skyblue;
+  }
+
+.bottom {
+  transform: translateY(5em) rotateX(90deg);
+  background: steelblue;
+  }
+
+.front {
+  transform: translateZ(5em);
+  background: gold;
+  }
+
+@keyframes rotate {
+  to {
+    transform:rotateZ(45deg) rotateX(0deg) rotateY(0deg);
+  }
+  from {
+    transform:rotateZ(45deg) rotateX(360deg) rotateY(-360deg);
+  }
+}

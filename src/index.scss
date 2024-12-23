@@ -1,0 +1,19 @@
+* {
+  box-sizing: border-box;
+}
+:root {
+  background-color: bisque;
+  color:dimgray;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+  perspective: 1000px;
+  perspective-origin: center -5em;
+  justify-content: center;
+  align-items: center;
+}
